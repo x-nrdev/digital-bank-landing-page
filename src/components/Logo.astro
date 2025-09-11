@@ -1,0 +1,13 @@
+---
+import type { Logo } from "../types";
+import lightLogo from "../assets/logos/logo-light.svg";
+import darkLogo from "../assets/logos/logo-dark.svg";
+import { Image } from "astro:assets";
+
+type Props = Logo;
+
+const { theme } = Astro.props;
+const srcPath = theme === "light" ? lightLogo : darkLogo;
+---
+
+<Image src={srcPath} alt="Digital Bank Logo" />
