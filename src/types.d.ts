@@ -5,3 +5,12 @@ export interface MetaTags {
 export interface Logo {
   theme: 'light' | 'dark'
 }
+
+export interface NavLinks {
+  links: Link[]
+}
+
+export interface Link {
+  href: string
+  innerText: string
+}

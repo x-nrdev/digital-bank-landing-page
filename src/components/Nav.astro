@@ -1,7 +1,17 @@
 ---
 import Logo from "./Logo.astro";
+import NavLinks from "./NavLinks.astro";
+
+const links = [
+    { href: "/", innerText: "Home" },
+    { href: "/about", innerText: "About" },
+    { href: "/contact", innerText: "Contact" },
+    { href: "/blog", innerText: "Blog" },
+    { href: "/careers", innerText: "Careers" }
+];
 ---
 
 <nav>
     <Logo theme="dark" />
+    <NavLinks links={links} />
 </nav>

@@ -1,0 +1,12 @@
+---
+import type { Link } from "../types";
+type Props = Link;
+
+const { href, innerText } = Astro.props;
+---
+
+<li>
+    <a href={href}>
+        {innerText}
+    </a>
+</li>
