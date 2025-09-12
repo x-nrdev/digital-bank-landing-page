@@ -2,6 +2,7 @@
 import type { MetaTags } from "../types";
 import Layout from "../layouts/Layout.astro";
 import H1 from "../components/H1.astro";
+import Nav from "../components/Nav.astro";
 
 const MetaTags: MetaTags = {
     title: "Frontend Mentor | Next generation digital banking"
@@ -9,5 +10,6 @@ const MetaTags: MetaTags = {
 ---
 
 <Layout MetaTags={MetaTags}>
+    <Nav />
     <H1>Next generation digital banking</H1>
 </Layout>
