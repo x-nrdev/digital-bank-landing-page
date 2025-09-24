@@ -24,6 +24,19 @@ const { title } = MetaTags;
 
 <style is:global>
     /* CSS Reset */
+    :root {
+        --color-primary-blue: hsl(233, 26%, 24%);
+        --color-primary-green: hsl(136, 64%, 51%);
+        --color-primary-cyan: hsl(192, 69%, 51%);
+        --color-gray-50: hsl(233, 8%, 62%);
+        --color-gray-100: hsl(220, 16%, 96%);
+        --color-gray-600: hsl(0, 0%, 98%);
+
+        --breakpoint-sm: 375px;
+        --breakpoint-md: 768px;
+        --breakpoint-lg: 1440px;
+    }
+
     * {
         min-width: 0;
         font: inherit;
@@ -61,6 +74,7 @@ const { title } = MetaTags;
     }
 
     p {
+        font-size: 18px;
         text-wrap: pretty;
     }
 </style>
