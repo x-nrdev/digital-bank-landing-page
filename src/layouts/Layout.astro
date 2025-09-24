@@ -15,6 +15,12 @@ const { title } = MetaTags;
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
         <title>{title}</title>
     </head>
     <body>
@@ -23,7 +29,9 @@ const { title } = MetaTags;
 </html>
 
 <style is:global>
-    /* CSS Reset */
+    @import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+    /* Variables */
     :root {
         --color-primary-blue: hsl(233, 26%, 24%);
         --color-primary-green: hsl(136, 64%, 51%);
@@ -37,6 +45,7 @@ const { title } = MetaTags;
         --breakpoint-lg: 1440px;
     }
 
+    /* CSS Reset */
     * {
         min-width: 0;
         font: inherit;
@@ -57,7 +66,7 @@ const { title } = MetaTags;
     }
 
     body {
-        font-family: system-ui, sans-serif;
+        font-family: "Public Sans", sans-serif;
         margin: 0;
         padding: 0;
         box-sizing: border-box;

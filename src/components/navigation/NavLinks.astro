@@ -9,3 +9,12 @@ const { links } = Astro.props;
 <ul>
     {links.map((link) => <NavLink {...link} />)}
 </ul>
+
+<style>
+    ul {
+        display: flex;
+        gap: 2rem;
+        padding: 0;
+        list-style: none;
+    }
+</style>

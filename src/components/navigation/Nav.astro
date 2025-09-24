@@ -1,4 +1,5 @@
 ---
+import Anchor from "../ui/Anchor.astro";
 import Logo from "../ui/Logo.astro";
 import NavLinks from "./NavLinks.astro";
 
@@ -14,4 +15,17 @@ const links = [
 <nav>
     <Logo theme="dark" />
     <NavLinks links={links} />
+    <Anchor href="#" innerText="Request Invite" variant="primary" />
 </nav>
+
+<style>
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-block: 1.2rem;
+
+        max-width: 1200px;
+        margin-inline: auto;
+    }
+</style>
