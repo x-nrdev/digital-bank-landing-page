@@ -14,3 +14,9 @@ export interface Link {
   href: string
   innerText: string
 }
+
+export interface AnchorButtonType {
+  href: string
+  innerText: string
+  variant: 'primary' | 'secondary'
+}
