@@ -1,0 +1,24 @@
+---
+import type { AnchorButtonType } from "../../types";
+
+type Props = AnchorButtonType;
+const { href, innerText, variant } = Astro.props;
+---
+
+<a href={href} class={`button ${variant}`}>{innerText}</a>
+<style>
+    .button {
+        padding: 1rem 2rem;
+        border-radius: 20rem;
+    }
+
+    .button.primary {
+        color: white;
+        background: linear-gradient(
+            to bottom left,
+            var(--color-primary-green),
+            var(--color-primary-cyan)
+        );
+        text-decoration: none;
+    }
+</style>
