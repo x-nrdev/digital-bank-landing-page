@@ -10,15 +10,20 @@ const { href, innerText, variant } = Astro.props;
     .button {
         padding: 1rem 2rem;
         border-radius: 20rem;
-    }
+        transition: 0.2s ease-in-out filter;
 
-    .button.primary {
-        color: white;
-        background: linear-gradient(
-            to bottom left,
-            var(--color-primary-green),
-            var(--color-primary-cyan)
-        );
-        text-decoration: none;
+        &.primary {
+            color: white;
+            background: linear-gradient(
+                to bottom left,
+                var(--color-primary-green),
+                var(--color-primary-cyan)
+            );
+            text-decoration: none;
+        }
+
+        &:hover {
+            filter: opacity(0.5);
+        }
     }
 </style>
