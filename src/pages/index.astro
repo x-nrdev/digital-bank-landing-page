@@ -3,6 +3,10 @@ import type { MetaTags } from "../types";
 import Layout from "../layouts/Layout.astro";
 import H1 from "../components/ui/H1.astro";
 import Nav from "../components/navigation/Nav.astro";
+import { Image } from "astro:assets";
+import mockup from "../assets/image-mockups.png";
+import bgMockupDesktop from "../assets/backgrounds/bg-intro-desktop.png";
+import bgMockupMobile from "../assets/background/bg-intro-mobile.svg";
 
 const MetaTags: MetaTags = {
     title: "Frontend Mentor | Next generation digital banking"
@@ -11,5 +15,19 @@ const MetaTags: MetaTags = {
 
 <Layout MetaTags={MetaTags}>
     <Nav />
-    <H1>Next generation digital banking</H1>
+    <main>
+        <section>
+            <div>
+                <H1>Next generation digital banking</H1>
+                <p>
+                    Take your financial life online. Your Digitalbank account
+                    will be a one-stop-shop for spending, saving, budgeting,
+                    investing, and much more.
+                </p>
+            </div>
+            <div>
+                <Image src={mockup} alt="Mockup Image" />
+            </div>
+        </section>
+    </main>
 </Layout>
