@@ -1,0 +1,32 @@
+---
+import hamburger from "@assets/icons/icon-hamburger.svg";
+import close from "@assets/icons/icon-close.svg";
+import { Image } from "astro:assets";
+---
+
+<input type="checkbox" name="hamburger" id="hamburger" />
+<label for="hamburger" class="hamburger-label">
+    <Image src={hamburger} alt="Open menu" class="hamburger-open" />
+    <Image src={close} alt="Close menu" class="hamburger-close" />
+</label>
+
+<style>
+    #hamburger {
+        display: none;
+
+        &:not(:checked) ~ .hamburger-label .hamburger-open {
+            display: block;
+        }
+        &:checked ~ .hamburger-label .hamburger-close {
+            display: block;
+        }
+    }
+
+    .hamburger-open,
+    .hamburger-close {
+        display: none;
+        width: 2.4rem;
+        aspect-ratio: 1/1;
+        object-fit: contain;
+    }
+</style>
