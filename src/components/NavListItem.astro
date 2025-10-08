@@ -1,0 +1,10 @@
+---
+import type { NavListItemType } from "@types";
+
+type Props = NavListItemType;
+const { text, href } = Astro.props as Props;
+---
+
+<li>
+    <a href={href}>{text}</a>
+</li>

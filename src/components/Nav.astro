@@ -1,0 +1,15 @@
+---
+import NavList from "./NavList.astro";
+
+const items = [
+    { text: "Home", href: "#" },
+    { text: "About", href: "#" },
+    { text: "Contact", href: "#" },
+    { text: "Blog", href: "#" },
+    { text: "Careers", href: "#" }
+];
+---
+
+<nav>
+    <NavList {items} />
+</nav>

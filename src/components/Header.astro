@@ -1,18 +1,11 @@
 ---
+import Nav from "./Nav.astro";
 import logo from "@assets/logos/logo-dark.svg";
 import { Image } from "astro:assets";
 ---
 
 <header>
     <Image src={logo} alt="logo" />
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Blog</li>
-            <li>Careers</li>
-        </ul>
-    </nav>
+    <Nav />
     <button>Request Invite</button>
 </header>

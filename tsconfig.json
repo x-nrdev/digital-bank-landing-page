@@ -10,6 +10,9 @@
   "compilerOptions": {
     "baseUrl": "./src",
     "paths": {
+      "@types": [
+        "types"
+      ],
       "@components/*": [
         "components/*"
       ],
