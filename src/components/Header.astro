@@ -16,9 +16,15 @@ import Hamburger from "./Hamburger.astro";
 
 <style>
     header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        padding: 1.4rem 1.2rem;
 
         .navigation {
             display: none;
