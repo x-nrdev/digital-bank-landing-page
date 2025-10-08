@@ -1,6 +1,6 @@
 ---
 import type { NavListType } from "@types";
-import NavListItem from "./NavListItem.astro";
+import NavItem from "./NavItem.astro";
 
 type Props = NavListType;
 
@@ -8,5 +8,5 @@ const { items } = Astro.props as Props;
 ---
 
 <ul>
-    {items.map((item) => <NavListItem {...item} />)}
+    {items.map((item) => <NavItem {...item} />)}
 </ul>
