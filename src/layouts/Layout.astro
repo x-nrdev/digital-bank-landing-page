@@ -19,9 +19,15 @@ const { family } = FONT;
     </body>
 </html>
 
-<style define:vars={{ family }}>
+<style define:vars={{ family }} is:global>
     body {
         font-family: var(--family);
         margin: 0;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
     }
 </style>
