@@ -1,0 +1,19 @@
+---
+import { COLORS } from "@css-constants";
+
+const { green500, cyan400 } = COLORS.primary;
+---
+
+<button>Request Invite</button>
+
+<style define:vars={{ green500, cyan400 }}>
+    button {
+        background: linear-gradient(to right top, var(--cyan400), var(--green500));
+        border: none;
+        border-radius: 50px;
+        color: white;
+        padding: 0.8rem 1.6rem;
+        font-weight: bold;
+        cursor: pointer;
+    }
+</style>
