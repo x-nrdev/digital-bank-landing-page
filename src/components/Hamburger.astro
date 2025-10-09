@@ -2,9 +2,11 @@
 import hamburger from "@assets/icons/icon-hamburger.svg";
 import close from "@assets/icons/icon-close.svg";
 import { Image } from "astro:assets";
+
+const { class: className } = Astro.props;
 ---
 
-<input type="checkbox" name="hamburger" id="hamburger" />
+<input type="checkbox" name="hamburger" id="hamburger" class={className} />
 <label for="hamburger" class="hamburger-label">
     <Image src={hamburger} alt="Open menu" class="hamburger-open" />
     <Image src={close} alt="Close menu" class="hamburger-close" />

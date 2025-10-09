@@ -7,7 +7,7 @@ import Hamburger from "./Hamburger.astro";
 
 <header>
     <Image src={logo} alt="logo" />
-    <Hamburger />
+    <Hamburger class="fn-hamburger" />
     <div class="navigation">
         <Nav />
         <button>Request Invite</button>
@@ -16,6 +16,7 @@ import Hamburger from "./Hamburger.astro";
 
 <style>
     header {
+        --header-height: 4.6rem;
         position: sticky;
         top: 0;
         z-index: 100;
@@ -24,10 +25,23 @@ import Hamburger from "./Hamburger.astro";
         align-items: center;
         justify-content: space-between;
 
-        padding: 1.4rem 1.2rem;
+        height: var(--header-height);
+        padding-inline: 1.4rem;
+
+        .fn-hamburger:checked ~ .navigation {
+            display: block;
+            opacity: 1;
+        }
 
         .navigation {
             display: none;
+            position: fixed;
+            inset: 0;
+            top: var(--header-height);
+            background-color: rgba(0, 0, 0, 0.4);
+            opacity: 0;
+            text-align: center;
+            transition: 0.3s ease-in-out opacity;
         }
     }
 </style>

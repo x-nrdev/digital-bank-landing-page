@@ -10,3 +10,11 @@ const { items } = Astro.props as Props;
 <ul>
     {items.map((item) => <NavItem {...item} />)}
 </ul>
+
+<style>
+    ul {
+        margin-block: 1.4rem;
+        padding: 0 1.4rem;
+        list-style: none;
+    }
+</style>
