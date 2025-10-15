@@ -13,9 +13,6 @@
       "@types": [
         "types"
       ],
-      "@css-constants": [
-        "css-constants"
-      ],
       "@components/*": [
         "components/*"
       ],

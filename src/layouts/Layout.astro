@@ -1,8 +1,5 @@
 ---
 import Header from "@components/Header.astro";
-import { FONT } from "@css-constants";
-
-const { family } = FONT;
 ---
 
 <html lang="en">
@@ -19,9 +16,52 @@ const { family } = FONT;
     </body>
 </html>
 
-<style define:vars={{ family }} is:global>
+<style is:global>
+    /* 
+
+export const FONT = {
+  family: "'Public Sans', sans-serif",
+  weights: {
+    light: 300,
+    regular: 400,
+    bold: 700,
+  },
+} as const
+
+export const FONT_SIZE = {
+  body: '18px',
+} as const
+    
+     */
+    :root {
+        --fontFamily: "Public Sans, sans-serif, serif";
+
+        --mobile: 375px;
+        --desktop: 1440px;
+
+        --primaryBlue: hsl(233, 26%, 24%);
+        --primaryGreen: hsl(136, 64%, 51%);
+        --primaryCyan: hsl(192, 69%, 51%);
+        --neutralGrayHigh: hsl(233, 8%, 62%);
+        --neutralGrayMedium: hsl(220, 16%, 96%);
+        --neutralGrayLight: hsl(0, 0%, 98%);
+        --neutralWhite: hsl(0, 100%, 100%);
+    }
+
     body {
-        font-family: var(--family);
+        font-family:
+            system-ui,
+            -apple-system,
+            BlinkMacSystemFont,
+            "Segoe UI",
+            Roboto,
+            Oxygen,
+            Ubuntu,
+            Cantarell,
+            "Open Sans",
+            "Helvetica Neue",
+            sans-serif;
+        font-size: 18px;
         margin: 0;
     }
 

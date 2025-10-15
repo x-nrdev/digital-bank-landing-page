@@ -1,16 +1,10 @@
----
-import { COLORS } from "@css-constants";
-
-const { green500, cyan400 } = COLORS.primary;
----
-
 <button>
     <slot />
 </button>
 
-<style define:vars={{ green500, cyan400 }}>
+<style>
     button {
-        background: linear-gradient(to right top, var(--cyan400), var(--green500));
+        background: linear-gradient(to right top, var(--primaryCyan), var(--primaryGreen));
         border: none;
         border-radius: 50px;
         color: white;
