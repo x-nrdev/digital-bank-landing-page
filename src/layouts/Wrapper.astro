@@ -2,7 +2,7 @@
 const { class: className } = Astro.props;
 ---
 
-<div class=`wrapper ${className}`>
+<div class=`${className ? "wrapper " + className : "wrapper"}`>
     <slot />
 </div>
 
