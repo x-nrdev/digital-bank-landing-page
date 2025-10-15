@@ -62,6 +62,18 @@ import Wrapper from "@layouts/Wrapper.astro";
         text-align: center;
     }
 
+    section:first-child {
+        padding-top: 0;
+    }
+
+    section {
+        padding-block: 4rem;
+    }
+
+    section:nth-child(even) {
+        background-color: hsl(0, 0%, 98%);
+    }
+
     .mockup-container {
         position: relative;
     }
