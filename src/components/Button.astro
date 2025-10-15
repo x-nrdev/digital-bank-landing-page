@@ -4,7 +4,9 @@ import { COLORS } from "@css-constants";
 const { green500, cyan400 } = COLORS.primary;
 ---
 
-<button>Request Invite</button>
+<button>
+    <slot />
+</button>
 
 <style define:vars={{ green500, cyan400 }}>
     button {
