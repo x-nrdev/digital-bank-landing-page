@@ -1,4 +1,8 @@
-<div class="wrapper">
+---
+const { class: className } = Astro.props;
+---
+
+<div class=`wrapper ${className}`>
     <slot />
 </div>
 
