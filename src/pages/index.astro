@@ -4,6 +4,7 @@ import { Image } from "astro:assets";
 import bgMobile from "@assets/bg/bg-intro-mobile.svg";
 import mockup from "@assets/articles/image-mockups.png";
 import Button from "@components/Button.astro";
+import Wrapper from "@layouts/Wrapper.astro";
 ---
 
 <Layout>
@@ -12,12 +13,14 @@ import Button from "@components/Button.astro";
             <Image src={mockup} alt="Mockup" class={"mockup-image"} />
             <Image src={bgMobile} alt="Mobile Background" />
         </div>
-        <h1>Next Generation Digital Banking</h1>
-        <p>
-            Take your financial life online. Your Digitalbank account will be a one-stop-shop for spending, saving,
-            budgeting, investing, and much more.
-        </p>
-        <Button>Request Invite</Button>
+        <Wrapper>
+            <h1>Next Generation Digital Banking</h1>
+            <p>
+                Take your financial life online. Your Digitalbank account will be a one-stop-shop for spending, saving,
+                budgeting, investing, and much more.
+            </p>
+            <Button>Request Invite</Button>
+        </Wrapper>
     </main>
 </Layout>
 
