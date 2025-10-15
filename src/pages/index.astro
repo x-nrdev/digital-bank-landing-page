@@ -2,13 +2,28 @@
 import Layout from "@layouts/Layout.astro";
 import { Image } from "astro:assets";
 import bgMobile from "@assets/bg/bg-intro-mobile.svg";
+import mockup from "@assets/articles/image-mockups.png";
 ---
 
 <Layout>
     <main>
         <div class="mockup-container">
+            <Image src={mockup} alt="Mockup" class={"mockup-image"} />
             <Image src={bgMobile} alt="Mobile Background" />
         </div>
         <h1>Next Generation Digital Banking</h1>
     </main>
 </Layout>
+
+<style>
+    .mockup-container {
+        position: relative;
+    }
+
+    .mockup-image {
+        position: absolute;
+        top: -5.6rem;
+        left: 0%;
+        z-index: 1;
+    }
+</style>
