@@ -9,22 +9,28 @@ import Wrapper from "@layouts/Wrapper.astro";
 
 <Layout>
     <main>
-        <div class="mockup-container">
-            <Image src={mockup} alt="Mockup" class={"mockup-image"} />
-            <Image src={bgMobile} alt="Mobile Background" />
-        </div>
-        <Wrapper>
-            <h1>Next Generation Digital Banking</h1>
-            <p>
-                Take your financial life online. Your Digitalbank account will be a one-stop-shop for spending, saving,
-                budgeting, investing, and much more.
-            </p>
-            <Button>Request Invite</Button>
-        </Wrapper>
+        <section>
+            <div class="mockup-container">
+                <Image src={mockup} alt="Mockup" class={"mockup-image"} />
+                <Image src={bgMobile} alt="Mobile Background" />
+            </div>
+            <Wrapper>
+                <h1>Next Generation Digital Banking</h1>
+                <p>
+                    Take your financial life online. Your Digitalbank account will be a one-stop-shop for spending,
+                    saving, budgeting, investing, and much more.
+                </p>
+                <Button>Request Invite</Button>
+            </Wrapper>
+        </section>
     </main>
 </Layout>
 
 <style>
+    main {
+        text-align: center;
+    }
+
     .mockup-container {
         position: relative;
     }
