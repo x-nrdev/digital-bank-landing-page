@@ -1,0 +1,48 @@
+---
+import { Image } from "astro:assets";
+import articlePlane from "@assets/articles/image-plane.jpg";
+import articleCurrency from "@assets/articles/image-currency.jpg";
+import articleConfetti from "@assets/articles/image-confetti.jpg";
+import articleRestaurant from "@assets/articles/image-restaurant.jpg";
+import { placements } from "astro/runtime/client/dev-toolbar/ui-library/window.js";
+---
+
+<section>
+    <h2>Latest Articles</h2>
+
+    <article>
+        <Image src={articleCurrency} alt="currency article image" />
+        <small>By Claire Robinson</small>
+        <p>
+            Receive money in any currency with no fees The world is getting smaller and we’re becoming more mobile. So
+            why should you be forced to only receive money in a single …
+        </p>
+    </article>
+
+    <article>
+        <Image src={articleRestaurant} alt="restaurant article image" />
+        <small>By Wilson Hutton</small>
+        <p>
+            Treat yourself without worrying about money Our simple budgeting feature allows you to separate out your
+            spending and set realistic limits each month. That means you …
+        </p>
+    </article>
+
+    <article>
+        <Image src={articlePlane} alt="plane article image" />
+        <small>By Wilson Hutton</small>
+        <p>
+            Take your Digitalbank card wherever you go We want you to enjoy your travels. This is why we don’t charge
+            any fees on purchases while you’re abroad. We’ll even show you …
+        </p>
+    </article>
+
+    <article>
+        <Image src={articleConfetti} alt="confetti article image" />
+        <small>By Claire Robinson</small>
+        <p>
+            Our invite-only Beta accounts are now live! After a lot of hard work by the whole team, we’re excited to
+            launch our closed beta. It’s easy to request an invite through the site ...
+        </p>
+    </article>
+</section>
